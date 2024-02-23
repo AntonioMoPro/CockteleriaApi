@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" stylesheets="@../../../estilos.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cockteleriaapi.HelloController">
+   <children>
+      <ImageView fx:id="imgCocktail" fitHeight="302.0" fitWidth="466.0" layoutX="354.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tablaBebidas" layoutX="133.0" layoutY="483.0" prefHeight="302.0" prefWidth="757.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="172.8000030517578" text="Nombre" />
+            <TableColumn fx:id="colIngredientes" prefWidth="507.9999633789063" text="Preparación" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbCocktail" layoutX="214.0" layoutY="430.0" onAction="#meterDatosTabla" prefWidth="150.0" />
+      <ComboBox fx:id="cmbFiltro" layoutX="491.0" layoutY="430.0" onAction="#filtrar" prefWidth="150.0" />
+      <Label layoutX="399.0" layoutY="434.0" text="FILTRAR POR:" textFill="WHITE" />
+      <TextField fx:id="txtFiltro" layoutX="741.0" layoutY="430.0" onKeyTyped="#buscarBebidas" />
+      <Label layoutX="676.0" layoutY="434.0" text="BUSCAR:" textFill="WHITE" />
+      <Label layoutX="147.0" layoutY="434.0" text="BEBIDAS:" textFill="WHITE" />
+   </children>
+</AnchorPane>
