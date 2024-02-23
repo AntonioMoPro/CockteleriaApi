@@ -1,5 +1,5 @@
 Descripción
-Esta aplicación web es una interfaz para la búsqueda de cócteles. Se conecta a una API externa para obtener información sobre una amplia variedad de bebidas y te permite:
+Esta aplicación es una interfaz para la búsqueda de cócteles. Se conecta a una API externa para obtener información sobre una amplia variedad de bebidas y te permite:
 -Seleccionar un cóctel de una lista desplegable.
 -Ver información detallada sobre el cóctel seleccionado, incluyendo ingredientes, instrucciones de preparación e imagen.
 -Filtrar la lista de cócteles por tipo de bebida (alcohólica, no alcohólica o todas).
